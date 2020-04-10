@@ -4,44 +4,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    private List<Player> players;
-    private List<Thread> playerThreads;
     private Board board;
+    private List<Player> players;
     private int turn;
+    private static Boolean stop;
+    private int playersNumber;
 
-    public Game(){
-        this.players = new ArrayList<>();
-        this.playerThreads = new ArrayList<>();
-    }
-
-    public  Game(Board board){
-        this.players = new ArrayList<>();
-        this.playerThreads = new ArrayList<>();
+    public Game(Board board) {
         this.board = board;
+        stop = false;
+        players = new ArrayList<>();
+        turn = 0;
     }
 
     public void play(){
-        for (Player player : players) {
-            playerThreads.add(new Thread(player));
-        }
-        for (Thread thread : playerThreads){
-            thread.start();
-        }
-        this.turn = 0;
-        while (!board.isEmpty()){
-            players.get(turn).notify();
+        for (int i = 0; i < playersNumber; i++) {
+            new Thread(players.get(i)).start();
         }
     }
 
     public void addPlayer(Player player){
         players.add(player);
+        player.setMyTurn(playersNumber++);
+        player.setBoard(board);
+    }
+
+    public int getTurn() {
+        return turn;
     }
 
     public synchronized void setTurn() {
-        this.turn = (this.turn + 1) % players.size();
+        this.turn = (turn + 1) % playersNumber;
     }
 
-    public int getTurn(){
-        return this.turn;
+    public Boolean getStop() {
+        return stop;
+    }
+
+    public Boolean setStop(Boolean stop) {
+        return this.stop = stop;
     }
 }

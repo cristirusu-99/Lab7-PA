@@ -3,15 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4528ea1c-d705-4179-be45-2b9e5b4639d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/com/compulsory/Token.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/compulsory/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/compulsory/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/compulsory/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/compulsory/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/compulsory/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/compulsory/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/compulsory/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/compulsory/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/compulsory/Token.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,77 +87,92 @@
       <workItem from="1585933452989" duration="50000" />
       <workItem from="1586436524971" duration="1353000" />
       <workItem from="1586441172334" duration="4000" />
-      <workItem from="1586460336775" duration="6168000" />
+      <workItem from="1586460336775" duration="6335000" />
+      <workItem from="1586507049290" duration="1956000" />
+      <workItem from="1586520664788" duration="4403000" />
     </task>
+    <task id="LOCAL-00001" summary="Must solve thread sync!">
+      <created>1586466710176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586466710176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Must solve thread sync!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Must solve thread sync!" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1585928926247">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586522310528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585928926247" />
-    <state x="783" y="161" key="CommitChangelistDialog2" timestamp="1586466667473">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586522310528" />
+    <state x="783" y="161" key="CommitChangelistDialog2" timestamp="1586466707726">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="783" y="161" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586466667473" />
+    <state x="783" y="161" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586466707726" />
     <state x="740" y="221" key="FileChooserDialogImpl" timestamp="1585933486338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="221" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585933486338" />
-    <state width="1877" height="447" key="GridCell.Tab.0.bottom" timestamp="1586466667517">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1586525058242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586466667517" />
-    <state width="1877" height="447" key="GridCell.Tab.0.center" timestamp="1586466667517">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586525058242" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1586525058242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586466667517" />
-    <state width="1877" height="447" key="GridCell.Tab.0.left" timestamp="1586466667517">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586525058242" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1586525058242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586466667517" />
-    <state width="1877" height="447" key="GridCell.Tab.0.right" timestamp="1586466667517">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586525058242" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1586525058242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586466667517" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586465925523">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586525058242" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586524261086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586465925523" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1586465925523">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586524261086" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1586524261086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586465925523" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1586465925522">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586524261086" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1586524261086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586465925522" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1586465925523">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586524261086" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1586524261086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586465925523" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586460339708">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586524261086" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586520667089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586460339708" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586520667089" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586465909998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1586465909998" />
+    <state x="521" y="256" width="877" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586507986700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="521" y="256" width="877" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1586507986700" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/compulsory/Game.java</url>
-          <line>22</line>
-          <properties class="com.compulsory.Game" method="play">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/compulsory/Main.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

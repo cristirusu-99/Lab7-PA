@@ -5,49 +5,47 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 
 public class Board {
-    private int tokenNumber;
+    private int maxTokensNumber;
+    private int tokensNumber;
     private List<Token> tokens;
     private Game game;
 
-
-    Board(int tokenNumber) {
+    public Board(int tokensNumber){
+        this.tokensNumber = tokensNumber;
+        this.maxTokensNumber = tokensNumber;
         this.tokens = new ArrayList<>();
-        this.tokenNumber = tokenNumber;
-        Token newToken;
-        for(int i = 1; i<=tokenNumber; ++i) {
-            newToken = new Token(i);
-            tokens.add(newToken);
-        }
+        for (int i = 1; i <= tokensNumber; i++)
+            tokens.add(new Token(i));
     }
 
-    public synchronized Token extract(@NotNull Player player) {
-        Token pickedToken = null;
+    public synchronized Token extractToken(@NotNull Player player) {
+        Token givenToken = null;
         try {
             this.notify();
             while (player.getMyTurn() != game.getTurn()) {
                 this.wait(10);
             }
-            if (this.isEmpty()) {
+            if (tokensNumber == 0 || game.getStop()) {
                 this.notifyAll();
                 game.setTurn();
                 return null;
             }
-            System.out.println("Board: Tura jucatorului " + player.getName());
-            //printTokens();
-            pickedToken = player.pickToken(this);
-            System.out.println("Tura jucatorului " + player.getName() + " s-a sfarsit\n");
+            System.out.println("Turn of player: " + player.getName() + "!");
+            givenToken = tokens.get(new Random().nextInt(tokensNumber));
+            System.out.println("Turn of player: " + player.getName() + " has ended!\n");
             game.setTurn();
+            tokens.remove(givenToken);
         } catch (Exception ignored) {
             System.out.println("Crapa ?");
         }
-        return pickedToken;
-    }
-
-    public boolean isEmpty(){
-        return this.tokenNumber==0;
+        return givenToken;
     }
 
     public void setGame(Game game) {
         this.game = game;
+    }
+
+    public Boolean isEmpty() {
+        return game.setStop(tokensNumber == 0);
     }
 }

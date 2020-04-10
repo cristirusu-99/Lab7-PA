@@ -1,37 +1,38 @@
 package com.compulsory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Player implements Runnable {
     private String name;
     private Board board;
     private int myTurn;
+    private List<Token> myTokens;
 
     @Override
     public void run() {
-        Token token;
-        int i = 0;
-        while (true) {
-            try {
-                System.out.println(name + ": Waiting my turn");
-                wait();
-            } catch (InterruptedException e) {
-                token = board.extract(this);
-                System.out.println(name + ": " + token.getValue());
-                ++i;
-                e.printStackTrace();
-            }
-        }
+        do {
+            myTokens.add(board.extractToken(this));
+        } while (myTokens.get(myTokens.size() - 1) != null);
+        myTokens.remove(null);
+        endMsg();
     }
 
-    public Token pickToken(Board board){
-        return null;
+    public synchronized void endMsg(){
+        System.out.println("Player: " + name + " has: " + myTokens.toString());
+    }
+
+    public Player(String name) {
+        this.name = name;
+        this.myTokens = new ArrayList<>();
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Board getBoard() {
+        return board;
     }
 
     public void setBoard(Board board) {
